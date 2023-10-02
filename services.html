@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="csspage.css">
+  <!-- ^links the html document to the css page -->
+  <title>Solution cleaning services</title>
+    <!-- Changes displayed web title -->
+</head>
+
+<body>
+  <!-- bellow is start of nav bar code -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" style="width: 100px;" alt="Logo">
+      </a>
+    </div>
+  <!-- ul(list) displays all the links for the nav bar -->
+<ul class="nav-links">
+  <li><a href="index.html" class="item"><p>Home</p></a></li>
+  <li><a href="quoting.html" class="item"><p>Quoting</p></a></li>
+  <li><a href="services.html" class="item"><p>Provided services</p></a></li>
+  <li><a href="contact.html" class="item"><p>Contact us</p></a></li>
+  <li><a href="about.html" class="item"><p>About us</p></a></li>
+  <li style="flex-grow: 22;">
+    <div><p class="Number">(Number)</p></div>
+  </li>
+</ul>
+    
+    <!--Link section specifically for mobile-->
+    <ul class="mobile-nav-links">
+      <li>
+        <div class="nav_bar_number">(Number)</div>
+        <figure>
+          <div class="mobile-menu">
+            <div class="menu-icon" id="menu-icon">
+              <img src="images/mobile_icon.png" class="Hamburger_icon" alt="Hamburger icon">
+            </div>
+            <ul class="menu" id="menu">
+              <li style="padding-top: 18px;"><a href="index.html">Home</a></li>
+              <li><a href="quoting.html">Quoting</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li style="padding-bottom: 18px;"><a href="About.html">About</a></li>
+            </ul>
+          </div>
+        </figure>
+      </li>
+    </ul>
+  </nav>
+
+  <header> <!-- header section with medium hero image and text -->
+    <div class="centered_txt" style="background-color: #1D5498;" >
+      <h2 class="heading" style=" color: white; margin: 0; margin-top: 30px; padding-top: 3.5vh; padding-bottom: 3.5vh;">See our services</h2>
+      <img class="medium_img" id="Services_top_img" src="images/placehold.png" alt="placeholder">
+      <p class="paragraph services_paragraph">Lorem Ipsum  Lorem Ipsum  Lorem Ipsum</p>
+    </div>
+  </header>
+
+  <h2 class="centered_txt heading">What do we do?</h2>
+  <p class="centered_txt paragraph" style="margin-top: 1.5em; margin-bottom: 1.5em;">Lorem Ipsum  Lorem Ipsum  Lorem Ipsum Lorem Ipsum  Lorem Ipsum  Lorem Ipsum</p>
+  
+  <!-- section for the 2 image/text boxes divided by a divider line -->
+  <div class="services_flex-container">
+    <div class="box">
+      <img class="small_img" src="images/placehold.png" alt="placeholder">
+      <p class="heading bold">Lorem Ipsum</p>
+      <p class="paragraph">Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum</p>
+    </div>
+
+    <div class="divider remove"></div>
+    <div class="box">
+      <img class="small_img" src="images/placehold.png" alt="placeholder">
+      <p class="heading bold">Lorem Ipsum</p>
+      <p class="paragraph">Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum</p>
+    </div>
+  </div>
+
+  <!-- last section of services page with large image button and text -->
+  <div class="centered_txt" style="background-color: #FFF1EA;" >
+    <h2 class="heading" style=" color: black; margin: 0; margin-top: 30px; padding-top: 3.5vh; padding-bottom: 3.5vh;">What can you expect</h2>
+    <p class="paragraph services_paragraph2">Lorem Ipsum  Lorem Ipsum  Lorem Ipsum<br>
+      Lorem Ipsum  Lorem Ipsum  Lorem Ipsum<br>
+      Lorem Ipsum  Lorem Ipsum  Lorem Ipsum<br>
+      Lorem Ipsum  Lorem Ipsum  Lorem Ipsum<br></p>
+    <img class="wide_services_img" id="Services_bottom_img" style="padding-bottom: 10px;" src="images/placehold.png" alt="placeholder">
+  </div>
+
+  <div class="centered" style="margin-top: 5vh; margin-bottom: 5vh;">
+    <a class="button" style="  border-radius: 2px" href="Quoting.html">Get a quote</a>
+  </div>
+
+  <!-- section for footer -->
+  <footer class="footer">
+    <p class="paragraph footer_text"> BY THE STAVRONI CORPERATION</p>
+  </footer>
+      
+  <!-- Javascript so that once the hamburger icon is pressed on mobile it displays to mobile nav bar -->
+  <script>
+    const menuIcon = document.getElementById("menu-icon");
+  const menu = document.getElementById("menu");
+
+  menuIcon.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  menuIcon.classList.toggle("active");
+  });
+  </script>
+
+</body>
+</html>

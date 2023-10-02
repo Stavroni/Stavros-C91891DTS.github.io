@@ -1,0 +1,3 @@
+while making my nav bar I saw that it displayed a link underscore when it which is not in the original design.
+
+To fix this I added a class to all my nav bar links and specified no text decoration in my css page

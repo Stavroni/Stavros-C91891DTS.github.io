@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Start point for generic classes, e.g this will have the font families for headers paragraphs, centered text etc */
+.centered_txt {
+  text-align: center;
+}
+
+.heading{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.paragraph{
+  font-family: 'Roboto', sans-serif;
+}
+
+.paragraph_size{
+  font-size: 16px;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+.centered{
+  justify-content: center;
+  display: flex;
+}
+
+.footer {
+  background-color: #222C38;
+  color: white;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.small_img{
+  width: 18vw;
+  min-width: 120px;
+}
+
+.medium_img{
+  width: 28vw;
+}
+
+.red_line {
+  width: 85%;
+  height: 1.75px; /* Adjust line thickness as needed */
+  background-color: black; /* Black line color */
+  border: 1.75px solid red; /* Red border color */
+  
+}
+
+.blue_line {
+  width: 32.5%;
+  height: 1.25px; /* Adjust line thickness as needed */
+  background-color: black; /* Black line color */
+  border: 1.75px solid #1D5498; /* Red border color */
+  
+}
+
+.footer_text{
+  padding-left: 1em;
+}
+/* End point for generic classes, e.g this will have the font families for headers paragraphs, centered text etc */
+
+/* Css for index page */
+
+body, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* generall rules for lists */
+.navbar{
+  background-color: #1D5498;
+  display: flex;
+  position: relative;
+  height: 72.5px;
+}
+
+.navbar::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6%;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-links {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around; 
+  align-items: stretch;
+}
+
+
+/* adusts anv element */
+.nav-links a {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 15.5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+  height: auto;
+}
+
+.nav-links li {
+  flex-grow: 1;
+  display: flex;
+
+
+
+}
+
+/* adjusts links in nav element */
+
+.nav-links a:hover {
+  background-color: #0C3150; 
+}
+/* :hover deffines a psuedo class e.g this one's rules occurs when overed over */
+/* when hovering over links in the nav bar they have a differnt background color */
+.nav-links div {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  align-items: center;
+  color: white;
+  font-size: 15.5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  flex-grow: 22;
+  padding-top: .925rem;
+  padding-bottom: .925rem;
+    margin-right: 2.5vw;
+}
+/* adjusts divs in nav element */
+
+.nav-links li .Number {
+
+  text-align: right;
+  margin-right: 2.5vw;
+  align-items: center;
+  margin: 0;
+
+}
+
+.logo {
+  background-color: #FDFAFD;
+  z-index: +1;
+  margin-right: -0vw;
+}
+/* z-index works like layers in photoshop, by adding +1 I make the img layer go ontop of the red line */
+/* code for nav bar ends here */
+
+.header_img{
+  display: flex;
+  align-items: center;
+  width: 100%; /* Set container width */
+  height: 40vw; /* Set container height */
+  background-size: 100% 100%;
+  background-image: url("images/placehold.png");
+  justify-content: flex-end;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.image-figure {
+  margin: 0; /* Remove margin */
+}
+
+.hero_img{
+  width: 100%;
+  height: 80vh;
+  float: right;
+  visibility: hidden;
+}
+
+.header_txt{
+  margin-right: auto;
+  font-family: 'Roboto', sans-serif;
+}
+/* this image is invisable to act as a temp solution for text position in the flexbox */
+
+.button{
+  display: inline-block; /* Ensures the button behaves like a block element */
+  text-decoration: none;
+  color: white;
+  background-color: black; /* Set background color */
+  padding: 8px 35px; /* Add padding for spacing */
+  border-radius: 20px; /* Add rounded edges */
+  border: 2px solid black; /* Add a black border */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+
+/* 3 box flex container */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  height: 50vh;
+  background-color: #FDFAFD;
+  padding: 0px;
+}
+
+.box {
+  flex: 1;
+  text-align: center;
+  padding: 2px;
+  background-color: #FDFAFD;
+  color: black;
+}
+
+.flex-edit{
+  height: 20vh;
+  background-color: #FFF1EA;
+}
+
+.box-edit{
+  background-color:#FFF1EA ;
+  color: black;
+}
+
+.indx_btm_img{
+  width: 80%;
+  max-height: 35vh; /* Sets the maximum height as a percentage */
+  margin-top: 10vh;
+}
+
+/* End of Css for index page */
+
+/* Start of Css for quoting page */
+.flex-edit2{
+  height: 25vh;
+  min-height: 120px;
+  background-color: #FFF1EA;
+}
+/* End of Css for quoting page */
+
+/* Start of Css for services page */
+.services_paragraph{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+}
+
+.services_paragraph2{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.services_flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  height: 50vh;
+  background-color: #FDFAFD;
+  padding: 0px;
+}
+
+.divider {
+  width: 1.61px;
+  background-color: black;
+  border: 1.61px solid red;
+  height: 20em;
+}
+
+
+.wide_services_img{
+  width: 65vw;
+  height: 35vh;
+}
+
+/* End of of Css for services page */
+
+/* Start of of Css for contact page */
+.contact-page {
+  border-left: 100px solid #FFF1EA;
+  border-right: 100px solid #FFF1EA;
+  position: relative;
+  z-index: -1;
+  margin: 0; /* Reset margin to 0 */
+  padding: 0; /* Reset padding to 0 */
+}
+
+.Contact_small_heading{
+  font-size: 20px;
+}
+
+.Contact_icon_resize{
+  width: 24px;
+
+}
+
+.Contact_icon{
+  position: relative;
+
+  top: 4px;
+  margin-right: 4px;
+}
+
+.Contact_icon2{
+  position: relative;
+
+
+  margin-right: 4px;
+}
+
+.Contact_icon_resize2{
+  width: 28px;
+
+}
+/* End of of Css for contact page */
+
+/* start of of Css for about page */
+.About_header{
+  text-align: center;
+}
+
+.about_header_img{
+  display: flex;
+  align-items: end;
+  width: 100%; /* Set container width */
+  height: 35vw; /* Set container height */
+  background-size: 100% 100%;
+  background-image: url("images/placehold.png");
+  justify-content: center;
+}
+
+.about_flex-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  height: 375px;
+  background-color: #FDFAFD;
+  padding: 0px;
+
+}
+
+.about_box {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  background-color: #FDFAFD;
+  color: black;
+}
+
+.about_box_img {
+  flex: 1;
+  text-align: center;
+  background-color: #FDFAFD;
+  color: black;
+}
+
+.about_flex_img{
+  width: 400px;
+}
+/* End of of Css for about page */
+
+/* Start of responsive design.  */
+
+.mobile-nav-links{
+  display: none;
+}
+
+/* mobile items start */
+.mobile_header_txt{
+  display: none;
+}
+/* mobile items end */
+
+/* css to hide for desktop and reveal for mobile */
+.reveal{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+  }
+
+  .reveal{
+    display: block;
+  }
+
+/* ALL OF THE CODE REFERING TO THE MOBILE NAV RIGHT NOW IF PROOF OF CONCEPT. WHEN MAKING THE MOBILE NAV I WILL ONLY ADD 1:
+A HAMBURGER MENU WHICH EXPANDS THE FULL NAV BAR FOR MOBILE, 2 THE(NUMBER) TEXT */
+  .mobile-nav-links{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around; 
+    align-items: stretch;
+  }
+
+  .mobile-nav-links div{
+/* THIS CODE IS TMP AS IT IS JUST COPY PASTED FROM THE NORMAL NAV-LINKS */
+      flex-grow: 32;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      text-decoration: none;
+      color: white;
+      font-size: 15.5px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      padding-top: .925rem;
+      padding-bottom: .925rem;
+      margin-right: 10px;
+  }
+
+  .mobile-nav-links li{
+          flex-grow: 32;
+          display: flex;
+      }
+
+  .mobile-nav-links a:hover {
+    background-color: #0C3150; 
+  }
+
+
+  .mobile-nav-links figure {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin: 0;
+    align-items: center;
+  
+  }
+
+  .mobile-nav-links li .Hamburger_icon {
+    width: 32px;
+    margin-right: 0px !important;
+
+  
+  }
+
+  .remove{
+    display: none;
+  }
+
+  .mobile_header_txt{
+    display: block;
+
+  }
+  
+  .header_img{
+    justify-content: space-between;
+    background-color: #FDFAFD;
+    height: 80vw;
+    min-width: 320px;
+    min-height: 320px;
+    background-image: url("images/placehold.png");
+/* change latter to background image */
+  }
+  .header_txt{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    /* text align center may be changed to possition mobile text differntly */
+  }
+
+  /* start of css for services mobile */
+  #Services_top_img{
+    width: 80vw;
+    height: 40vw;
+    content: url('images/placehold.png');
+    /* change image bellow to desired mobile image */
+  }
+
+  #Services_bottom_img{
+    width: 100vw;
+    height: 50vw;
+    content: url('images/placehold.png');
+    /* change image bellow to desired mobile image */
+  }
+    /* End of css for services mobile */
+
+  /* start of css for contact mobile */
+  .contact-page{
+    border-left: 00px solid #FFF1EA;
+    border-right: 00px solid #FFF1EA;
+  }
+
+  #Contact_blue_line{
+    width: 75vw;
+  }
+
+  #Contact_blue_line2{
+    width: 75vw;
+  }
+  /* end of css for contact mobile */
+
+    /* start of css for about mobile */
+  .services_flex-container{
+    /* flex-direction: column-reverse;
+    I dont know why this was added because it wasnt in the design, 
+    I descided to keep it here incase for any reasion it is actualy 
+    intended. remove comment to activate */
+    height: auto;
+    
+  }
+
+  .about_flex_img{
+    width: 90vw;
+    height: 45vw;
+    content: url('images/placehold.png');
+
+    /* change image bellow to desired mobile image */
+    /* end of css for about mobile */
+  } 
+
+    .about_flex-container{
+      height: auto;
+      flex-direction: column-reverse;
+    }
+
+    #about_paragraph{
+      margin: 0;
+    }
+
+    #about_img{
+      margin-bottom: 8px;
+    }
+
+    .about_header_img{
+      height: 80vw;
+    }
+    /* Start of mobile nav bar */
+
+    .mobile-menu {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding: 5px;
+
+
+  }
+  
+  .menu-icon {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: none;
+      flex-direction: column;
+
+      
+  }
+
+  .menu li:hover {
+    background-color: #0C3150; 
+  }
+  
+  .menu.active {
+    display: flex;
+    position: absolute;
+    top: 67.5px;
+    padding-top: 4.5px;
+    /* remove the padding top and add 4.5px to top to include red line bit */
+    background-color: #1D5498;
+    border: 1px solid black;
+    border-top: none ;
+    border-right: none;
+    right: 0px;
+    z-index: 10000;
+  }
+  
+  .menu li {
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+  }
+    /* End of mobile nav bar */
+}
+
+/* specific css for very small screens */
+@media (max-width: 360px) {
+  .small_header{
+  font-size: 24px;
+  }
+
+  .small_paragraph{
+    font-size: 12px;
+  }
+  .small_button{
+    padding: 6px 28px;
+  }
+}
