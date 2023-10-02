@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="csspage.css">
+  <!-- ^links the html document to the css page -->
+  <title>Solution cleaning services</title>
+    <!-- Changes displayed web title -->
+</head>
+
+<body>
+  <!-- bellow is start of nav bar code -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" style="width: 100px;" alt="Logo">
+      </a>
+    </div>
+  <!-- ul(list) displays all the links for the nav bar -->
+<ul class="nav-links">
+  <li><a href="index.html" class="item"><p>Home</p></a></li>
+  <li><a href="quoting.html" class="item"><p>Quoting</p></a></li>
+  <li><a href="services.html" class="item"><p>Provided services</p></a></li>
+  <li><a href="contact.html" class="item"><p>Contact us</p></a></li>
+  <li><a href="about.html" class="item"><p>About us</p></a></li>
+  <li style="flex-grow: 22;">
+    <div><p class="Number">(Number)</p></div>
+  </li>
+</ul>
+    
+    <!--Link section specifically for mobile-->
+    <ul class="mobile-nav-links">
+      <li>
+        <div class="nav_bar_number">(Number)</div>
+        <figure>
+          <div class="mobile-menu">
+            <div class="menu-icon" id="menu-icon">
+              <img src="images/mobile_icon.png" class="Hamburger_icon" alt="Hamburger icon">
+            </div>
+            <ul class="menu" id="menu">
+              <li style="padding-top: 18px;"><a href="index.html">Home</a></li>
+              <li><a href="Quoting.html">Quoting</a></li>
+              <li><a href="Services.html">Services</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li style="padding-bottom: 18px;"><a href="About.html">About</a></li>
+            </ul>
+          </div>
+        </figure>
+      </li>
+    </ul>
+  </nav>
+
+  <header> <!-- section for blue color strip -->
+    <div class="centered_txt" style="background-color: #1D5498;">
+      <h2 class="heading" style=" color: white; margin: 0; margin-top: 15vh; padding-top: 3.5vh; padding-bottom: 3.5vh;">How do we price?</h2>
+    </div>
+
+
+    <div class="centered_txt">
+        <p class="heading" style=" margin: 0; padding-top: 3.5vh; padding-bottom: 3.5vh;">Lorem IpsumLorem IpsumLorem IpsumLorem<br>
+             IpsumLorem Ipsum Lorem Ipsum<br> 
+             Lorem Ipsum  Lorem Ipsum  Lorem Ipsum<br> Lorem Ipsum Lorem Ipsum  </p>
+    </div>
+
+    <div class="centered_txt"> <!-- section for red color strip -->
+        <h2 class="heading" style="background-color: #D93A42; margin: 0; padding-top: 25px; padding-bottom: 25px;">Pricing guidelines</h2>
+    </div>
+
+  </header>
+
+
+  <div class="flex-container flex-edit2" style="margin-top: 50px;"> <!-- 3 "boxes" each containing text -->
+    <div class="box box-edit">
+      <p class="heading bold">Lorem Ipsum</p>
+      <p class="paragraph">Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum<br>Lorem Ipsum<br>Lorem Ipsum</p>
+    </div> 
+    <div class="box box-edit remove">
+      <p class="heading bold">Lorem Ipsum</p>
+      <p class="paragraph">Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum<br>Lorem Ipsum<br>Lorem Ipsum</p>
+    </div>
+    <div class="box box-edit">
+      <p class="heading bold">Lorem Ipsum</p>
+      <p class="paragraph">Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum<br>Lorem Ipsum<br>Lorem Ipsum</p>
+    </div>
+  </div>
+
+  <!-- start of mobile beige boxes -->
+  <div class="reveal">
+    <div class="flex-container flex-edit2">
+      <div class="box box-edit">
+        <p class="heading bold">Lorem Ipsum</p>
+        <p class="paragraph">Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum<br>Lorem Ipsum<br>Lorem Ipsum</p>
+      </div>
+      <div class="box box-edit remove">
+        <p class="heading bold">Lorem Ipsum</p>
+        <p class="paragraph">Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum<br>Lorem Ipsum<br>Lorem Ipsum</p>
+      </div>
+      <div class="box box-edit">
+        <p class="heading bold">Lorem Ipsum</p>
+        <p class="paragraph">Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum<br>Lorem Ipsum<br>Lorem Ipsum</p>
+      </div>
+    </div>
+  </div>
+  <!-- end of mobile beige boxes -->
+
+  <div class="centered" style="margin-top: 5vh; margin-bottom: 5vh;">
+    <a class="button" href="Services.html">See our services</a>
+  </div>
+
+  <!-- section for footer -->
+  <footer class="footer">
+    <p class="paragraph footer_text"> BY THE STAVRONI CORPERATION</p>
+  </footer>
+
+  <!-- Javascript so that once the hamburger icon is pressed on mobile it displays to mobile nav bar -->
+  <script>
+    const menuIcon = document.getElementById("menu-icon");
+  const menu = document.getElementById("menu");
+
+  menuIcon.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  menuIcon.classList.toggle("active");
+  });
+  </script>
+
+</body>
+</html>

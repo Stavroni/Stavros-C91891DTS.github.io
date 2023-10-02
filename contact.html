@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="csspage.css">
+  <!-- ^links the html document to the css page -->
+  <title>Solution cleaning services</title>
+    <!-- Changes displayed web title -->
+</head>
+
+<body>
+  <!-- bellow is start of nav bar code -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" style="width: 100px;" alt="Logo">
+      </a>
+    </div>
+  <!-- ul(list) displays all the links for the nav bar -->
+<ul class="nav-links">
+  <li><a href="index.html" class="item"><p>Home</p></a></li>
+  <li><a href="quoting.html" class="item"><p>Quoting</p></a></li>
+  <li><a href="services.html" class="item"><p>Provided services</p></a></li>
+  <li><a href="contact.html" class="item"><p>Contact us</p></a></li>
+  <li><a href="about.html" class="item"><p>About us</p></a></li>
+  <li style="flex-grow: 22;">
+    <div><p class="Number">(Number)</p></div>
+  </li>
+</ul>
+    
+    <!--Link section specifically for mobile-->
+    <ul class="mobile-nav-links">
+      <li>
+        <div class="nav_bar_number">(Number)</div>
+        <figure>
+          <div class="mobile-menu">
+            <div class="menu-icon" id="menu-icon">
+              <img src="images/mobile_icon.png" class="Hamburger_icon" alt="Hamburger icon">
+            </div>
+            <ul class="menu" id="menu">
+              <li style="padding-top: 18px;"><a href="index.html">Home</a></li>
+              <li><a href="Quoting.html">Quoting</a></li>
+              <li><a href="Services.html">Services</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li style="padding-bottom: 18px;"><a href="About.html">About</a></li>
+            </ul>
+          </div>
+        </figure>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="contact-page"> <!-- This div exists to use css to apply the boards seen on the page -->
+    <header>
+      <!-- First centered text block on page -->
+      <h1 class="centered_txt heading" style="margin-top: 0; padding-top: 0.75em;"><img class="Contact_icon Contact_icon_resize" src="images/phone_icon.png" alt="Phone icon">Contact by phone</h1>
+      <h2 class="centered_txt heading Contact_small_heading">(Company phone)</h2>
+      <p class="centered_txt paragraph" style="margin-top: 1.5em; margin-bottom: 1.5em;">Lorem Ipsum Lorem Ipsum<br>
+            Lorem Ipsum Lorem Ipsum <br>Lorem Ipsum  Lorem Ipsum</p>
+      <h2 class="centered_txt heading Contact_small_heading">(Owners phone)</h2>
+      <p class="centered_txt paragraph" style="margin-top: 1.5em; margin-bottom: 1.5em;">Lorem Ipsum Lorem Ipsum<br>
+          Lorem Ipsum Lorem Ipsum <br>Lorem Ipsum  Lorem Ipsum</p>
+    </header>
+
+    <div class="centered">
+        <div class="blue_line" id="Contact_blue_line" style="margin-top: 2.5vh; margin-bottom: 2.5vh;"></div> <!-- Div for divider line -->
+    </div> 
+    <!-- Second centered text block on page -->
+    <h1 class="centered_txt heading"><img class="Contact_icon2 Contact_icon_resize2" src="images/email_icon.png" alt="Email icon">Contact by email</h1>
+    <p class="centered_txt paragraph" style="margin-top: 1.5em; margin-bottom: 1.5em;">Lorem Ipsum Lorem Ipsum<br>
+          Lorem Ipsum Lorem Ipsum <br>Lorem Ipsum  Lorem Ipsum</p>
+    <div class="centered">
+        <div class="blue_line" id="Contact_blue_line2" style="margin-top: 2.5vh; margin-bottom: 2.5vh;"></div><!-- Div for divider line -->
+    </div> 
+
+    <h1 class="centered_txt heading">Addresses</h1>
+    <p class="centered_txt paragraph" style="margin-top: 1.5em; margin-bottom: 0em; padding-bottom: 1.5em;">Lorem Ipsum Lorem Ipsum<br>
+        Lorem Ipsum Lorem Ipsum <br>Lorem Ipsum  Lorem Ipsum</p>
+  </div>
+
+  <!-- section for footer -->
+  <footer class="footer">
+      <p class="paragraph footer_text"> BY THE STAVRONI CORPERATION</p>
+  </footer>
+
+  <!-- Javascript so that once the hamburger icon is pressed on mobile it displays to mobile nav bar -->
+  <script>
+    const menuIcon = document.getElementById("menu-icon");
+  const menu = document.getElementById("menu");
+
+  menuIcon.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  menuIcon.classList.toggle("active");
+  });
+  </script>
+
+</body>
+</html>
